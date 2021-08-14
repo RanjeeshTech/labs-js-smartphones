@@ -71,11 +71,13 @@ class MobileCampus{
     changeMobileAvailabilityNumber(count,type){
         if(type === 'android'){
             this.NoOfAndroidMobiles = this.NoOfAndroidMobiles - count;
+            this.NoOfMobiles = this.NoOfMobiles-count;
             return 'Available android mobiles are '+this.NoOfAndroidMobiles;
 
         }
         if(type === 'iphone'){
             this.NoOfIPhoneMobiles = this.NoOfIPhoneMobiles - count;
+            this.NoOfMobiles = this.NoOfMobiles-count;
             return 'Available iphone mobiles are '+this.NoOfIPhoneMobiles;
         }
     }
